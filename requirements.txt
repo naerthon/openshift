@@ -1,15 +1,6 @@
-boto3==1.4.7
-botocore==1.7.36
 Django==1.9
-django-appconf==1.0.2
 django-imagekit==3.3
 django-storages==1.6.5
-docutils==0.14
-gunicorn==19.6.0
-jmespath==0.9.3
 pilkit==1.1.13
 Pillow==3.3.1
-psycopg2==2.6.2
 python-dateutil==2.6.1
-s3transfer==0.1.11
-six==1.11.0

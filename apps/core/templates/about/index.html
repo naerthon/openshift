@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+	<div class="col-lg-12">
+		<div class="well">
+			<h2 style="text-align:center;">ABOUT</h2>
+		</div>
+	</div>
+	{% if rows %}
+	<div class="col-lg-12">
+		<ul class="nav nav-tabs">
+			{% for row in rows %}
+				<li {% if forloop.first %} class="active"{% endif %}>
+					<a aria-expanded="true" href="#tab_{{row.id}}" data-toggle="tab">
+					<img  src="{{row.avatar_thumbnail.url}}">
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+
+		<div id="myTabContent" class="tab-content">
+			{%for row in rows%}
+			<div class="tab-pane{% if forloop.first %} active{% endif %}" id="tab_{{ row.id }}">
+				<p>{{row.description}}</p>
+			</div>
+			{%endfor%}
+		</div>
+	</div>
+	{% else %}
+	<p>Sorry! No rows available</p>
+	{% endif %}
+</div>
+{% endblock %}

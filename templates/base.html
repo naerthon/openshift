@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>StoneSalt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}"/>
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/stylesheet.css' %}" media="screen,projection"/>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+      <![endif]-->
+      <script src="{% static 'js/ga.js' %}" async="" type="text/javascript"></script><script>
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+   </script>
+   <script src="{% static 'js/C6AILKT.json' %}" type="text/javascript" id="_carbonads_projs"></script>
+ </head>
+ <body class="" style="">
+  <div class="container">
+    {%include 'nav.html'%}
+  </div>
+  <div class="container">
+<!--     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" onclick="login()">login</button>
+    <div class="login_div modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+      </div>
+    </div> -->
+    {%block content%}
+    {%endblock%}
+  </div>
+</body>
+<script src="{% static "js/jquery-1.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/custom.js" %}"></script>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */
+
+function login() {
+  $.ajax({
+    url: "{% url 'accounts:login' %}",
+    type: "GET",
+    success: function(text) {
+      $('.login_div').html(text);
+    }
+  });
+}
+// $.ajax({
+//     type:"POST",
+//     url: "{% url 'accounts:login' %}",
+//     data: $('#login_form').serialize(),  
+//     // the success function is called in the case of an http 200 response                                                                                  
+//     success: function(response){ 
+//         // redirect to the required url
+//         window.location = response;
+//      },                                                                                                                 
+// }); 
+</script>
+<script type="text/javascript">
+  $('tr[data-href]').on("click", function() {
+      document.location = $(this).data('href');
+  });
+</script>
+</html>

@@ -1,0 +1,85 @@
+[
+{
+ "model": "accounts.user",
+ "pk": 1,
+ "fields": {
+  "password": "bandass1",
+  "last_login": "2016-11-23T12:18:38Z",
+  "is_superuser": true,
+  "username": "admin",
+  "email": "bandastonesalt@gmail.com",
+  "name": "",
+  "is_active": true,
+  "is_staff": true,
+  "date_joined": "2016-11-06T01:51:55.705Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "accounts.user",
+ "pk": 2,
+ "fields": {
+  "password": "pbkdf2_sha256$24000$vsjcGrOdZtdm$foPCwqw0ZYgaDDugNXEe5GatCBv6AUrZNBGgU1FBKWE=",
+  "last_login": "2017-06-26T15:46:47.383Z",
+  "is_superuser": true,
+  "username": "naerthon",
+  "email": "naerthon@gmail.com",
+  "name": "",
+  "is_active": true,
+  "is_staff": true,
+  "date_joined": "2016-11-06T02:25:35.008Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "accounts.user",
+ "pk": 4,
+ "fields": {
+  "password": "pbkdf2_sha256$24000$RE3Rt138p8ju$RYA4dDoK17uluuS4NXfNC5HflHh0AkFdeMasp/yKe+w=",
+  "last_login": "2017-06-26T13:33:31.190Z",
+  "is_superuser": false,
+  "username": "julimar",
+  "email": "julimar@gmail.com",
+  "name": "",
+  "is_active": true,
+  "is_staff": false,
+  "date_joined": "2017-06-26T13:33:31.131Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "accounts.user",
+ "pk": 5,
+ "fields": {
+  "password": "pbkdf2_sha256$24000$uqPziGLZbs2P$Njg9nYJmnFOjNPolR5nTOAyijRg2FKXubRkNYDAKNcQ=",
+  "last_login": "2017-06-26T13:35:07Z",
+  "is_superuser": false,
+  "username": "Nathan",
+  "email": "Nathankaryon@hotmail.com",
+  "name": "",
+  "is_active": true,
+  "is_staff": false,
+  "date_joined": "2017-06-26T13:35:07.562Z",
+  "user_permissions": []
+ }
+},
+{
+ "model": "accounts.user",
+ "pk": 6,
+ "fields": {
+  "password": "pbkdf2_sha256$24000$WeBYYMMYOBLS$TnNVkpb4nyGKMsWPaVaW2ahkxonCwCQEJVS4X0Ep0Ew=",
+  "last_login": "2017-06-26T13:49:36.246Z",
+  "is_superuser": false,
+  "username": "Deividy",
+  "email": "deividybarrettos@gmail.com",
+  "name": "",
+  "is_active": true,
+  "is_staff": true,
+  "date_joined": "2017-06-26T13:42:32.285Z",
+  "user_permissions": []
+ }
+}
+]

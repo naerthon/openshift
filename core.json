@@ -1,0 +1,158 @@
+[
+{
+ "model": "core.news",
+ "pk": 1,
+ "fields": {
+  "title": "One News",
+  "text": "One News One News One News One News One News One News One News One News One News One News One News One News One News One News One News One News One News",
+  "created_date": "2016-09-22T13:40:58Z",
+  "published_date": "2016-09-22T13:41:46Z",
+  "news_thumbnail": "news/319_ot0nVVO.jpg"
+ }
+},
+{
+ "model": "core.news",
+ "pk": 2,
+ "fields": {
+  "title": "Other News",
+  "text": "Other NewsOther NewsOther NewsOther NewsOther NewsOther NewsOther NewsOther NewsOther NewsOther News",
+  "created_date": "2016-09-22T13:54:33Z",
+  "published_date": "2016-09-22T14:58:34Z",
+  "news_thumbnail": "news/319_TrRjZyi.jpg"
+ }
+},
+{
+ "model": "core.news",
+ "pk": 3,
+ "fields": {
+  "title": "Other News Again",
+  "text": "Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again Other News Again",
+  "created_date": "2016-09-22T15:01:05Z",
+  "published_date": "2016-09-22T15:01:36Z",
+  "news_thumbnail": "news/319.jpg"
+ }
+},
+{
+ "model": "core.band",
+ "pk": 1,
+ "fields": {
+  "name": "Nathanael Guedelho",
+  "function": "Guitarrista, Voz",
+  "birth_date": "1985-01-07",
+  "description": "Sobre nathan",
+  "active": true,
+  "avatar_thumbnail": "band/DSC_0032.JPG"
+ }
+},
+{
+ "model": "core.band",
+ "pk": 2,
+ "fields": {
+  "name": "Naerthon Guedelho",
+  "function": "Baixista, Voz",
+  "birth_date": "1987-11-09",
+  "description": "Sobre Naerthon",
+  "active": true,
+  "avatar_thumbnail": "band/DSC_0040.JPG"
+ }
+},
+{
+ "model": "core.band",
+ "pk": 3,
+ "fields": {
+  "name": "Deividy Barretos",
+  "function": "Bateria",
+  "birth_date": "2016-09-01",
+  "description": "Sobre Deividy",
+  "active": true,
+  "avatar_thumbnail": "band/DSC_0033.JPG"
+ }
+},
+{
+ "model": "core.band",
+ "pk": 4,
+ "fields": {
+  "name": "StoneSalt",
+  "function": "None",
+  "birth_date": "2015-11-17",
+  "description": "None",
+  "active": true,
+  "avatar_thumbnail": "band/cartaz1.jpg"
+ }
+},
+{
+ "model": "core.concert",
+ "pk": 1,
+ "fields": {
+  "title": "Sexta",
+  "local": "Bardo",
+  "date": "2016-10-07",
+  "localization": "https://www.google.com/maps/embed/v1/place?q=dunas+shopping+parnaiba&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU",
+  "cartaz_thumbnail": "cartazes/2016/10/7/14478552_322782354765531_1875475135692013568_n.jpg"
+ }
+},
+{
+ "model": "core.concert",
+ "pk": 2,
+ "fields": {
+  "title": "Festival do coiso",
+  "local": "Parnaiba, Torqu\u00e1lia",
+  "date": "2016-10-15",
+  "localization": "https://www.interserver-coupons.com/google-maps-authorization.js?id=1f804a7b-c299-3383-d8c2-9c9353baaa22&c=embed-map-code&u=1478297131",
+  "cartaz_thumbnail": "cartazes/2016/10/15/14478552_322782354765531_1875475135692013568_n.jpg"
+ }
+},
+{
+ "model": "core.concert",
+ "pk": 3,
+ "fields": {
+  "title": "(Ac\u00fastico bar)",
+  "local": "Candeeiros",
+  "date": "2016-11-04",
+  "localization": "https://www.google.com/maps/embed/v1/place?q=candeeiros+parnaiba&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU",
+  "cartaz_thumbnail": "cartazes/2016-11-04/cartaz_jlOwPCj.jpg"
+ }
+},
+{
+ "model": "core.concert",
+ "pk": 4,
+ "fields": {
+  "title": "Rock",
+  "local": "Torqu\u00e1lia",
+  "date": "2016-11-11",
+  "localization": "https://www.google.com/maps/embed/v1/place?key=AIzaSyCb1JMENnZgffDbnbtKfXWKqPbStQU0eBM&q=Torqualia+-+Rodovia+para+Pedra+de+Sal+-+Nossa+Senhora+do+Carmo+-+PI,+Brasil&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU",
+  "cartaz_thumbnail": "cartazes/2016/11/11/naerthon_H2p7gwE.jpg"
+ }
+},
+{
+ "model": "core.concert",
+ "pk": 5,
+ "fields": {
+  "title": "Pr\u00f3ximos Show",
+  "local": "Torqu\u00e1lia",
+  "date": "2017-06-30",
+  "localization": "torqualia",
+  "cartaz_thumbnail": "cartazes/2017/6/30/cartaz1.jpg"
+ }
+},
+{
+ "model": "core.video",
+ "pk": 1,
+ "fields": {
+  "title": "Rolling in the deep",
+  "url": "https://www.youtube.com/embed/NKHVbGw0oU4",
+  "created_date": "2016-09-20T15:26:51Z",
+  "published_date": "2016-09-20T15:28:01Z"
+ }
+},
+{
+ "model": "core.video",
+ "pk": 2,
+ "fields": {
+  "title": "Bon Jovi - It's My Life (StoneSalt cover)",
+  "url": "https://www.youtube.com/embed/Q4YfRIkd3n4",
+  "created_date": "2016-09-20T15:50:10Z",
+  "published_date": null
+ }
+}
+]

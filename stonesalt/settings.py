@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'stonesalt.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 DATABASES = {
@@ -99,7 +99,9 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/media/'
@@ -108,3 +110,8 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = 'accounts:login'
 LOGIN_REDIRECT_URL = 'core:index'
 LOGOUT_URL = 'accounts:logout'
+
+
+
+
+INTERNAL_IPS = ['127.0.0.1']

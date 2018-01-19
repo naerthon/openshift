@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'stonesalt.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 DATABASES = {
